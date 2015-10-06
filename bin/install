@@ -1,8 +1,16 @@
 #!/usr/bin/env node
 
 var Validate = require('git-validate');
+require('shelljs/global');
 
+// setup lint and prehook
 Validate.copy('../eslintrc', '.eslintrc');
 Validate.copy('../eslintignore', '.eslintignore');
 Validate.installScript('lint', 'eslint .');
 Validate.configureHook('pre-commit', ['lint', 'test']);
+
+// install eslint and its plugin
+exec('npm install eslint --save');
+exec('npm install eslint-config-tyrchen --save');
+exec('npm install eslint-plugin-react --save');
+

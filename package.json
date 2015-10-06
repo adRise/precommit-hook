@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "git-validate": "^2.0.0",
-    "eslint": "*"
+    "eslint": "*",
+    "shelljs": "*"
   },
   "scripts": {
     "install": "node bin/install"
