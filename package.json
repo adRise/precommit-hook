@@ -9,7 +9,7 @@
     "url": "https://github.com/tyrchen/precommit-hook.git"
   },
   "dependencies": {
-    "git-validate": "^2.0.0"
+    "git-validate-tyrchen": "*"
   },
   "scripts": {
     "install": "node bin/install"
