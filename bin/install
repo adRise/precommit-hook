@@ -1,10 +1,15 @@
 #!/usr/bin/env node
 
-var Validate = require('git-validate');
+var Validate = require('git-validate-tyrchen');
 
 // setup lint and prehook
 Validate.copy('../eslintrc', '.eslintrc');
 Validate.copy('../eslintignore', '.eslintignore');
 Validate.installScript('lint', 'eslint .');
 Validate.configureHook('pre-commit', ['lint', 'test']);
+
+// add dependencies
+Validate.installPkg('eslint', '*', {dev: true});
+Validate.installPkg('eslint-config-tyrchen', '*', {dev: true});
+Validate.installPkg('eslint-plugin-react', '*', {dev:true});
 
