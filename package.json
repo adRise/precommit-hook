@@ -1,6 +1,6 @@
 {
   "author": "Tyr Chen <tyr.chen@gmail.com> (https://github.com/tyrchen)",
-  "name": "precommit-hook",
+  "name": "precommit-hook-tyrchen",
   "description": "A useful pre-commit hook for git based projects that lints and runs npm test",
   "version": "3.0.0",
   "license": "MIT",
