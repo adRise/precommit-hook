@@ -12,4 +12,4 @@ Validate.configureHook('pre-commit', ['lint', 'test']);
 Validate.installPkg('eslint', '*', {dev: true});
 Validate.installPkg('eslint-config-tyrchen', '*', {dev: true});
 Validate.installPkg('eslint-plugin-react', '*', {dev:true});
-
+Validate.installPkg('babel-eslint', '*', {dev:true});
