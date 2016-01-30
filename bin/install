@@ -8,8 +8,3 @@ Validate.copy('../eslintignore', '.eslintignore');
 Validate.installScript('lint', 'eslint .');
 Validate.configureHook('pre-commit', ['lint', 'test']);
 
-// add dependencies
-Validate.installPkg('eslint', '*', {dev: true});
-Validate.installPkg('eslint-config-airbnb', '*', {dev: true});
-Validate.installPkg('eslint-plugin-react', '*', {dev:true});
-Validate.installPkg('babel-eslint', '*', {dev:true});

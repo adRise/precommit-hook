@@ -2,7 +2,7 @@
   "author": "Tyr Chen <tyr.chen@gmail.com> (https://github.com/tyrchen)",
   "name": "precommit-hook-adrise",
   "description": "A useful pre-commit hook for git based projects that lints and runs npm test",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "license": "MIT",
   "homepage": "https://github.com/adrise/precommit-hook",
   "repository": {
